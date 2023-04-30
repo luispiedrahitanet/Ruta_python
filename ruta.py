@@ -18,11 +18,11 @@ key      = "tu_clave_de_Mapquest"
 
 while True:
     orig = input( "\nCiudad de origen ('q' para salir): " )  # Pedimos datos de origen
-    if orig == "q" or orig == "Q" or orig == "quit":
+    if orig.lower() in ("q","quit"):
         break
     
     dest = input( "Ciudad de destino ('q' para salir): " )   # Pedimos datos de destino
-    if dest == "q" or orig == "Q" or orig == "quit":
+    if dest.lower() in ("q","quit"):
         break
     
     # Codificamos de tipo url
